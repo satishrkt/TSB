@@ -86,12 +86,19 @@ li .links{
     color: white;
 } */
 
+/*.subMenu li{
+    padding: 15px 20px;
+}
+
+.subMenu a{
+    color: white;
+} */
+
 .sub-menu {
     display: none;
     position: absolute;
     top: 75px;
     left: 0;
-    left: 775px;
     background: #123132;
     list-style: none;
     padding: 0;
@@ -117,7 +124,8 @@ li .links{
     width: 200px;
     left: 775px;
 }
-  
+
+
   
   
   
