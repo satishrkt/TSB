@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { provideRouter, Routes, withHashLocation } from '@angular/router';
 import { HomeComponent } from './main-component/home/home.component';
 import { PageNotFoundComponent } from './shared-component/page-not-found/page-not-found.component';
 import { AboutComponent } from './main-component/about/about.component';
@@ -20,4 +20,8 @@ export const routes: Routes = [
     { path: 'corporate', component: CorporateComponent },
     { path: 'gallery', component: PortfolioComponent},
     { path: '**', component: PageNotFoundComponent }
+];
+
+export const appRoutingProviders = [
+    provideRouter(routes, withHashLocation())
 ];
