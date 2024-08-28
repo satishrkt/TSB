@@ -36,7 +36,7 @@ a img{
 
 li{
     list-style: none;
-    padding: 0px 20px;
+    padding: 30px 20px;
 }
 
 li .links{
@@ -56,43 +56,6 @@ li .links{
 .links:hover::after{
     width: 100%;
 }
-
-/* .sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.subMenu {
-    left: 777px;
-    top: 77px;
-    display: block;
-    background-color: #123132;
-    height: 100px;
-    width: 200px;
-}
-
-.subMenu li{
-    padding: 15px 20px;
-}
-
-.subMenu a{
-    color: white;
-} */
-
-/*.subMenu li{
-    padding: 15px 20px;
-}
-
-.subMenu a{
-    color: white;
-} */
 
 .sub-menu {
     display: none;
@@ -121,7 +84,7 @@ li .links{
 .subMenu {
     display: block;
     height: 80px;
-    width: 200px;
+    width: 150px;
     left: 775px;
 }
 
