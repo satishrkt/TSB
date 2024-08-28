@@ -7,6 +7,7 @@ import { ResourcesComponent } from './main-component/resources/resources.compone
 import { ContactComponent } from './main-component/contact/contact.component';
 import { PrivateComponent } from './main-component/private/private.component';
 import { CorporateComponent } from './main-component/corporate/corporate.component';
+import { PortfolioComponent } from './main-component/portfolio/portfolio.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -17,5 +18,6 @@ export const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'private', component: PrivateComponent },
     { path: 'corporate', component: CorporateComponent },
+    { path: 'gallery', component: PortfolioComponent},
     { path: '**', component: PageNotFoundComponent }
 ];
