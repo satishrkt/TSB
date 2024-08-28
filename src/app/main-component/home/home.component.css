@@ -2,35 +2,43 @@
     width: 100%;
 }
 
-.banners {
+.section-home {
+    position: relative;
     height: 750px;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* Ensure no content overflows the section */
 }
 
-.wat{
-    font-size: 25px;
-}
-
-.banners img{
-    height: 100%;
+.banner img {
     width: 100%;
-    /* opacity: 0.75; */
-    transition: all 5s ease-in-out;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.banners img:hover{
-    transform: scale(2);
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire banner area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4; /* Corrected opacity syntax */
 }
 
-.banner-content{
+.heading {
     position: absolute;
-    top: 300px;
-    right: 380px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
-    z-index: 1;
 }
+
+.title {
+    font-family: 'Butler';
+    font-size: 80px;
+    color: #333; /* Add color to make text visible */
+    text-transform: uppercase;
+    mix-blend-mode: color-burn; /* This effect might be better with some backgrounds */
+    opacity: 1;
+    z-index: 999;
+}
+
 .about-us{
     display: flex;
     justify-content: center;
