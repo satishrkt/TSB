@@ -8,5 +8,5 @@ import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { loaderInterceptor } from './interceptor/loader.interceptor';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withHashLocation()), provideClientHydration(), provideAnimationsAsync(), provideHttpClient(withInterceptors([loaderInterceptor]))]
+  providers: [provideRouter(routes), provideClientHydration(), provideAnimationsAsync(), provideHttpClient(withInterceptors([loaderInterceptor]))]
 };
