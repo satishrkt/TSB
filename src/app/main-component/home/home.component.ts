@@ -41,25 +41,25 @@ export class HomeComponent implements OnInit {
   constructor(private api: UserServiceService) { }
   
   ngOnInit(): void {
-    this.getEventDetails();
+    // this.getEventDetails();
   }
 
-  getEventDetails() {
-    this.api.getEventDetails(null).subscribe((res: any) => {
-      if(res.status === 1 && res.message === "SUCCESS") {
-        this.eventDetails = res.data;
-        for(let event of this.eventDetails) {
-          const time = event.eventDate;
-          const date = new Date(time);
-          const year = date.getFullYear();
-          const month = (date.getMonth()+1).toString().padStart(2, '0');
-          const day = date.getDate().toString().padStart(2, '0');
-          const fullDate = `${year}-${month}-${day}`;
-          console.log(fullDate);
-          event.eventDate = fullDate;
-        }    
-        console.log(this.eventDetails);    
-      }
-    });
-  }
+  // getEventDetails() {
+  //   this.api.getEventDetails(null).subscribe((res: any) => {
+  //     if(res.status === 1 && res.message === "SUCCESS") {
+  //       this.eventDetails = res.data;
+  //       for(let event of this.eventDetails) {
+  //         const time = event.eventDate;
+  //         const date = new Date(time);
+  //         const year = date.getFullYear();
+  //         const month = (date.getMonth()+1).toString().padStart(2, '0');
+  //         const day = date.getDate().toString().padStart(2, '0');
+  //         const fullDate = `${year}-${month}-${day}`;
+  //         console.log(fullDate);
+  //         event.eventDate = fullDate;
+  //       }    
+  //       console.log(this.eventDetails);    
+  //     }
+  //   });
+  // }
 }
